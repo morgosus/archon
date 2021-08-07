@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "@fitbit/sdk": "~5.0.0",
+    "@fitbit/sdk-cli": "~1.7.3"
+  },
+  "fitbit": {
+    "appUUID": "fcf54000-9910-4a38-bbec-eb7847610649",
+    "appType": "clockface",
+    "appDisplayName": "archon",
+    "iconFile": "resources/icon.png",
+    "wipeColor": "#e91e63",
+    "requestedPermissions": [
+      "access_activity",
+      "access_user_profile",
+      "access_heart_rate",
+      "access_location",
+      "access_exercise",
+      "access_sleep"
+    ],
+    "buildTargets": [
+      "atlas",
+      "vulcan"
+    ],
+    "i18n": {
+      "en-US": {
+        "name": "archon"
+      }
+    },
+    "defaultLanguage": "en-US"
+  },
+  "scripts": {
+    "build": "fitbit-build"
+  }
+}
