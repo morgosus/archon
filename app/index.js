@@ -44,7 +44,7 @@ clock.ontick = (evt) => {
 
 
   //TODO: Don't do all of these every tick
-  const daysOfWeek = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+  const daysOfWeek = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const dateLabel = new FitFont({id:'date', font:'Monofonto_16'});
 
   let dayNumber = today.getDay();
