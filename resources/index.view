@@ -1,6 +1,14 @@
 <svg id="bg" viewport-fill="#070707" pointer-events="visible" >
   <svg id="home" display="inline">
 
+    <g transform="translate(0,0)">
+      <rect x="0" y="47+9-2" width="100%" height="21" opacity="0.25" />
+      <rect x="0" y="276-3" width="100%" height="21" opacity="0.25" />
+
+      <rect x="0" y="177+16-45+6" width="91" height="45" opacity="0.25" />
+      <rect x="336-91" y="177+16-45+6" width="91" height="45" opacity="0.25" />
+    </g>
+
     <g transform="translate(50%,177)">
       <animateTransform attributeType="rotate" from="0" to="360" begin="load" dur="26" repeatCount="indefinite"/>
       <image id="avatar" href="i/a/ouroboros-96-solid.png" x="$-48" y="$-48" height="96" width="96" />
@@ -10,8 +18,8 @@
       <use id="t1" x="76-15-20" y="177+16" href="#fitfont-char"/>
       <use id="t2" x="76-15-20" y="177+16" href="#fitfont-char"/>
       <use id="t3" display="none" href="#fitfont-char"/>
-      <use id="t4" x="143+15+20" y="177+16" href="#fitfont-char"/>
-      <use id="t5" x="143+15+20" y="177+16" href="#fitfont-char"/>
+      <use id="t4" x="148+15+20" y="177+16" href="#fitfont-char"/>
+      <use id="t5" x="148+15+20" y="177+16" href="#fitfont-char"/>
     </use>
 
     <use href="#fitfont" id="date" x="50%-52" y="112">
@@ -30,7 +38,9 @@
     </g>
   </svg>
 
-  <rect id="battery" x="232+20" y="73-14" width="32" height="16" />
+  <rect x="232+20+2" y="73-16" width="41" height="15" />
+  <rect x="232+20+2+1" y="73-16+1" width="39" height="13" fill="#000000" />
+  <rect id="battery" x="232+20+2+1" y="73-16+1" width="39" height="13" />
 
   <svg id="flashlight" display="none">
     <image href="i/u/flashlight.png" x="0" y="0" height="100%" width="100%" fill="#ffffff" />
