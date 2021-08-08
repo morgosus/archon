@@ -31,6 +31,19 @@ clock.ontick = (evt) => {
     clockLabel.text = `${hours}:${mins}`;
   }
 
+
+  //TODO: Don't do all of these every tick
+  const daysOfWeek = ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"];
+  const dateLabel = new FitFont({id:'date', font:'Monofonto_16'});
+
+  let dayNumber = today.getDay();
+  let dayOfWeek = daysOfWeek[dayNumber];
+  let dayOfMonth = zeroPad(today.getDate());
+  let month = zeroPad(today.getMonth()+1);
+  let year = today.getFullYear();
+
+  dateLabel.text = `${dayOfWeek} ${year}-${month}-${dayOfMonth}`;
+
   tick();
 }
 

@@ -1,7 +1,7 @@
 <svg id="bg" viewport-fill="#070707" pointer-events="visible" >
   <svg id="home" display="inline">
 
-    <g class="v-" transform="translate(50%,177)">
+    <g transform="translate(50%,177)">
       <animateTransform attributeType="rotate" from="0" to="360" begin="load" dur="26" repeatCount="indefinite"/>
       <image id="avatar" href="i/a/ouroboros-96.png" x="$-48" y="$-48" height="96" width="96" />
     </g>
@@ -12,6 +12,12 @@
       <use id="t3" display="none" href="#fitfont-char"/>
       <use id="t4" x="143+15" y="177+16" href="#fitfont-char"/>
       <use id="t5" x="143+15" y="177+16" href="#fitfont-char"/>
+    </use>
+
+    <use href="#fitfont" id="date" x="50%-52" y="112">
+      <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+      <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+      <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
     </use>
 
     <g id="stats" transform="translate(64, 275)">
