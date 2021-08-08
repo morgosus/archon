@@ -2,8 +2,8 @@
   <svg id="home" display="inline">
 
     <g transform="translate(0,0)">
-      <rect x="0" y="47+9-2" width="100%" height="21" opacity="0.25" />
-      <rect x="0" y="276-3" width="100%" height="21" opacity="0.25" />
+      <rect x="0" y="15" width="100%" height="21" opacity="0.25" />
+      <rect x="0" y="336-15-21" width="100%" height="21" opacity="0.25" />
 
       <rect x="0" y="177+16-45+6" width="91" height="45" opacity="0.25" />
       <rect x="336-91" y="177+16-45+6" width="91" height="45" opacity="0.25" />
@@ -28,7 +28,7 @@
       <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
     </use>
 
-    <g id="stats" transform="translate(64, 275)">
+    <g id="stats" transform="translate(64, 336-19-15)">
       <text x="0" y="14" font-size="16">164</text>
       <text x="104" y="14" font-size="16">11683</text>
       <text x="208" y="14" font-size="16">164</text>
@@ -38,7 +38,7 @@
     </g>
   </svg>
 
-  <g id="battery" transform="translate(252,57)">
+  <g id="battery" transform="translate(252,18)">
     <rect x="0" y="0" width="36" height="15" />
     <rect x="1" y="1" width="34" height="13" fill="#000000" />
     <rect id="b1" x="1" y="1" width="6" height="13" />
@@ -52,5 +52,5 @@
     <image href="i/u/flashlight.png" x="0" y="0" height="100%" width="100%" fill="#ffffff" />
   </svg>
 
-  <use x="64-20" y="84-14" href="#fitfont" id="console"><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/></use>
+  <use x="64-20" y="15+16" href="#fitfont" id="console"><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/></use>
 </svg>
