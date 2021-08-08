@@ -1,6 +1,10 @@
 .defaultText {
-  font-size: 32;
+}
+
+* {
+  fill: mediumpurple;
   font-family: System-Regular;
   font-weight: regular;
+  font-size: 16;
   text-length: 32;
 }
