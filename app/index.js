@@ -117,7 +117,7 @@ function batteryShow() {
     rmd = 0;
   }
 
-  console.log('Charge: ' + charge + ' Modulo 20: ' + mod + ' Remainder: ' + rmd);
+  //console.log('Charge: ' + charge + ' Modulo 20: ' + mod + ' Remainder: ' + rmd);
 
   if (charge <= 20) { /* Charge under 20 */
     b1.style.opacity = 1;
