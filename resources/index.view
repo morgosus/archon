@@ -3,15 +3,15 @@
 
     <g transform="translate(50%,177)">
       <animateTransform attributeType="rotate" from="0" to="360" begin="load" dur="26" repeatCount="indefinite"/>
-      <image id="avatar" href="i/a/ouroboros-96.png" x="$-48" y="$-48" height="96" width="96" />
+      <image id="avatar" href="i/a/ouroboros-96-solid.png" x="$-48" y="$-48" height="96" width="96" />
     </g>
 
     <use id="time" href="#fitfont">
-      <use id="t1" x="76-15" y="177+16" href="#fitfont-char"/>
-      <use id="t2" x="76-15" y="177+16" href="#fitfont-char"/>
+      <use id="t1" x="76-15-20" y="177+16" href="#fitfont-char"/>
+      <use id="t2" x="76-15-20" y="177+16" href="#fitfont-char"/>
       <use id="t3" display="none" href="#fitfont-char"/>
-      <use id="t4" x="143+15" y="177+16" href="#fitfont-char"/>
-      <use id="t5" x="143+15" y="177+16" href="#fitfont-char"/>
+      <use id="t4" x="143+15+20" y="177+16" href="#fitfont-char"/>
+      <use id="t5" x="143+15+20" y="177+16" href="#fitfont-char"/>
     </use>
 
     <use href="#fitfont" id="date" x="50%-52" y="112">
@@ -21,20 +21,20 @@
     </use>
 
     <g id="stats" transform="translate(64, 275)">
-      <text x="20" y="14" font-size="16">164</text>
+      <text x="0" y="14" font-size="16">164</text>
       <text x="104" y="14" font-size="16">11683</text>
-      <text x="188" y="14" font-size="16">164</text>
-      <image href="i/s/hr.png" x="0" y="0" width="17" height="17" />
+      <text x="208" y="14" font-size="16">164</text>
+      <image href="i/s/hr.png" x="-20" y="0" width="17" height="17" />
       <image href="i/s/stps.png" x="84" y="0" width="17" height="17" />
-      <image href="i/s/mins.png" x="168" y="0" width="17" height="17" />
+      <image href="i/s/mins.png" x="188" y="0" width="17" height="17" />
     </g>
   </svg>
 
-  <rect id="battery" x="232" y="73-14" width="32" height="16" />
+  <rect id="battery" x="232+20" y="73-14" width="32" height="16" />
 
   <svg id="flashlight" display="none">
     <image href="i/u/flashlight.png" x="0" y="0" height="100%" width="100%" fill="#ffffff" />
   </svg>
 
-  <use x="64" y="84-14" href="#fitfont" id="console"><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/></use>
+  <use x="64-20" y="84-14" href="#fitfont" id="console"><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/></use>
 </svg>
