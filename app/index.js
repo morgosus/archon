@@ -7,8 +7,14 @@ import { display } from "display";
 import { memory } from "system";
 import * as sensors from "./sensors";
 import { locale } from "user-settings";
-import { goals } from "user-activity";
 import { battery } from "power";
+
+import { goals } from "user-activity";
+import { primaryGoal } from "user-activity";
+import { today } from "user-activity";
+import { week } from "user-activity";
+import { weekGoals } from "user-activity";
+import * as messaging from "messaging";
 
 const clockLabel = new FitFont({id:'time', font:'Monofonto_45'});
 const consol = new FitFont({id:'console', font:'Monofonto_16'});
@@ -193,3 +199,65 @@ function batteryShow() {
 
   return;
 }
+
+const daily = document.getElementById('daily');
+const weekly = document.getElementById('weekly');
+
+function levelShow() {
+  let dailyProgress;
+  let weeklyProgress;
+
+  if(primaryGoal == "activeZoneMinutes") {
+    dailyProgress = today.adjusted["activeZoneMinutes"].total / goals["activeZoneMinutes"].total;
+    //console.log("Daily goal: " + today.adjusted["activeZoneMinutes"].total + " / " + goals["activeZoneMinutes"].total);
+  } else {
+    dailyProgress = today.adjusted[primaryGoal] / goals[primaryGoal];
+    //console.log("Daily goal: " + today.adjusted[primaryGoal] + " / " + goals[primaryGoal]);
+  }
+  weeklyProgress = week.adjusted.activeZoneMinutes / weekGoals.activeZoneMinutes;
+  //console.log("Weekly goal: " + week.adjusted.activeZoneMinutes + " / " + weekGoals.activeZoneMinutes);
+
+  if(dailyProgress > 1)
+    dailyProgress = 1;
+  if(weeklyProgress > 1)
+    weeklyProgress = 1;
+
+  daily.width = dailyProgress*244;
+  weekly.width = weeklyProgress*244;
+}
+levelShow();
+
+
+//
+//console.log('RState ' + messaging.peerSocket.readyState);
+//console.log('OPEN ' + messaging.peerSocket.OPEN);
+//console.log('CLOSED ' + messaging.peerSocket.CLOSED);
+//
+//if (messaging.peerSocket.readyState === messaging.peerSocket.OPEN) {
+//  messaging.peerSocket.send("Hello");
+//}
+
+const sync = new FitFont({id:'sync', font:'Monofonto_16', halign: 'middle'});
+sync.text = 'Sync'
+const connect = new FitFont({id:'connect', font:'Monofonto_16', halign: 'middle'});
+connect.text = 'Unknown'
+messaging.peerSocket.onmessage = evt => {
+  //console.log('Message received: ' + JSON.stringify(evt));
+
+  if (evt.data.key === 'snc') { //Last Sync
+    let lastSync = evt.data.newValue;
+    let splitSync = lastSync.split(" ");
+    sync.text = splitSync[4];
+  }
+};
+
+connect.text = messaging.ReadyState.OPEN;
+
+messaging.peerSocket.onclose = evt => {
+  //console.log('Message received: ' + JSON.stringify(evt));
+  connect.text = messaging.ReadyState.OPEN;
+};
+messaging.peerSocket.onopen = evt => {
+  //console.log('Message received: ' + JSON.stringify(evt));
+  connect.text = messaging.ReadyState.OPEN;
+};

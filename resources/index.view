@@ -5,8 +5,8 @@
       <rect x="0" y="15" width="100%" height="21" opacity="0.25" />
       <rect x="0" y="336-15-21" width="100%" height="21" opacity="0.25" />
 
-      <image x="0" y="50%+16-45+6" href="i/bg-l.png" width="91" height="45" opacity="0.25" />
-      <image x="336-91" y="50%+16-45+6" href="i/bg-r.png" width="91" height="45" opacity="0.25" />
+      <rect x="0" y="50%+16-45+6" width="91" height="45" opacity="0.25" />
+      <rect x="336-91" y="50%+16-45+6" width="91" height="45" opacity="0.25" />
     </g>
 
     <g transform="translate(50%,50%)">
@@ -30,15 +30,27 @@
       <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
     </use>
 
-    <g id="stats" transform="translate(64, 336-19-15)">
-      <text x="0" y="14" font-size="16">164</text>
-      <text x="104" y="14" font-size="16">11683</text>
-      <text x="208" y="14" font-size="16">164</text>
-      <image href="i/s/hr.png" x="-20" y="0" width="17" height="17" />
-      <image href="i/s/stps.png" x="84" y="0" width="17" height="17" />
-      <image href="i/s/mins.png" x="188" y="0" width="17" height="17" />
-    </g>
+
   </svg>
+
+  <g id="stats" transform="translate(64, 336-19-15)">
+    <text x="0" y="14" font-size="16">164</text>
+    <text x="104" y="14" font-size="16">11683</text>
+    <text x="208" y="14" font-size="16">164</text>
+    <image href="i/s/hr.png" x="-20" y="0" width="17" height="17" />
+    <image href="i/s/stps.png" x="84" y="0" width="17" height="17" />
+    <image href="i/s/mins.png" x="188" y="0" width="17" height="17" />
+  </g>
+
+  <g id="goals" transform="translate(0,-11)">
+    <rect x="43" y="273-15-1" width="250" height="24" opacity="0.25" />
+
+    <rect x="44+2" y="273-15+2" width="248-4" height="10" fill="black" />
+    <rect id="daily" x="44+2" y="273-15+2" width="244" height="10" fill="#204289" />
+
+    <rect x="44+2" y="273-15+12+3" width="248-4" height="5" fill="black" />
+    <rect id="weekly" x="44+2" y="273-15+12+3" width="244" height="5" fill="#292089" />
+  </g>
 
   <g id="battery" transform="translate(252,18)">
     <rect x="0" y="0" width="36" height="15" />
@@ -53,6 +65,17 @@
   <svg id="flashlight" display="none">
     <image href="i/u/flashlight.png" x="0" y="0" height="100%" width="100%" fill="#ffffff" />
   </svg>
+
+  <use id="sync" x="50%" y="50" href="#fitfont">
+    <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+    <use href="#fitfont-char"/><use href="#fitfont-char"/>
+  </use>
+  <use id="connect" x="50%" y="75" href="#fitfont">
+    <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+    <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+    <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+    <use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/>
+  </use>
 
   <use x="64-20" y="15+16" href="#fitfont" id="console"><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/><use href="#fitfont-char"/></use>
 </svg>
